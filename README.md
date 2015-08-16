@@ -2,7 +2,7 @@
 
 ## 预览
 
-<img src width="320px" height="266.5px" />
+<img src="/show.png" width="160px" height="266.5px" />
 
 ## 用来做什么
 
@@ -24,7 +24,7 @@
 
 ## 鸣谢
 
-## 更多
+## 更多.
 
 ## License
 Copyright (c) 2015 tomhuahua
