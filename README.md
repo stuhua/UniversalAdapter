@@ -1,3 +1,1 @@
-
-
-listview的万能适配器
+listview、girdview的万能适配器
