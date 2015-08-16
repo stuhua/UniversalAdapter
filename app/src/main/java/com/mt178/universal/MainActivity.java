@@ -11,10 +11,10 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     private ListView mListView;
     private CommonAdapter mAdapter;
-    private List<String> mDatas = new ArrayList<String>(Arrays.asList("刘", "连", "华",
-            "到", "此", "一",
-            "游", "！", "！",
-            "", "", ""));
+    private List<String> mDatas = new ArrayList<String>(Arrays.asList("我", "是", "一",
+            "个", "大", "帅",
+            "哥", "！", "！"
+    ));
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         mListView = (ListView) findViewById(R.id.lv_main);
 //        mAdapter = new MyAdapter(this, mDatas);
+        //只需要几行代码
         mListView.setAdapter(mAdapter = new CommonAdapter<String>(this, mDatas, R.layout.item) {
             @Override
             public void covert(ViewHolder holder, String item) {

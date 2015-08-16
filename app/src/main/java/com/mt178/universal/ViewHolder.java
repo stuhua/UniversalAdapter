@@ -8,11 +8,12 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 /**
+ * 通用的ViewHolder
  * Created by Administrator on 2015/8/15.
  */
 public class ViewHolder {
     private SparseArray<View> mViews;
-    private  View mConvertView;
+    private View mConvertView;
 
     private ViewHolder(Context context, ViewGroup parent, int layoutId, int position) {
         this.mViews = new SparseArray<View>();
@@ -37,12 +38,19 @@ public class ViewHolder {
         return (T) view;
     }
 
-    public  View getConvertView() {
+    public View getConvertView() {
         return mConvertView;
     }
 
-    public ViewHolder setText(int viewId,String text){
-        TextView view=getView(viewId);
+    /**
+     * 封装好TextView的findViewById和setTextView方法
+     *
+     * @param viewId
+     * @param text
+     * @return
+     */
+    public ViewHolder setText(int viewId, String text) {
+        TextView view = getView(viewId);
         view.setText(text);
         return this;
     }
